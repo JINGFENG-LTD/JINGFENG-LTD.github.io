@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="菁鋒科技有限公司｜軟體開發、AI應用與數據分析">
+  <title>菁鋒科技有限公司｜JINGFENG TECHNOLOGY</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      color: #172033;
+      background: #ffffff;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #07152d;
+      color: white;
+      padding: 18px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+    .brand small {
+      display: block;
+      font-size: 11px;
+      font-weight: normal;
+      letter-spacing: 1px;
+      opacity: .75;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 18px;
+      font-size: 14px;
+    }
+
+    .hero {
+      min-height: 560px;
+      padding: 110px 8%;
+      color: white;
+      background:
+        linear-gradient(120deg, rgba(5,18,43,.97), rgba(11,68,105,.90)),
+        radial-gradient(circle at 80% 20%, #2384a8, transparent 40%);
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero .tag {
+      color: #63d8ff;
+      font-weight: bold;
+      letter-spacing: 2px;
+      margin-bottom: 15px;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 7vw, 70px);
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+
+    .hero h2 {
+      font-size: clamp(17px, 3vw, 25px);
+      font-weight: 400;
+      color: #cde8f4;
+      margin-bottom: 28px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 17px;
+      color: #d7e4ef;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 24px;
+      background: #1aa6c9;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 75px 8%;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+      color: #0b2545;
+    }
+
+    .subtitle {
+      color: #657287;
+      margin-bottom: 35px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      padding: 30px;
+      border: 1px solid #e1e7ef;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 8px 28px rgba(0,0,0,.05);
+    }
+
+    .card h3 {
+      color: #0b5d7a;
+      margin-bottom: 12px;
+    }
+
+    .about {
+      background: #f4f7fa;
+    }
+
+    .product {
+      background: #07152d;
+      color: white;
+    }
+
+    .product h2 {
+      color: white;
+    }
+
+    .product .subtitle {
+      color: #b7c9d8;
+    }
+
+    .product-box {
+      max-width: 850px;
+      padding: 35px;
+      border: 1px solid #1b506d;
+      border-radius: 12px;
+      background: #0b213d;
+    }
+
+    .product-box h3 {
+      color: #63d8ff;
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    footer {
+      padding: 35px 8%;
+      background: #040d1c;
+      color: #9daebe;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      header {
+        display: block;
+      }
+
+      nav {
+        margin-top: 14px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 12px 5px 0;
+      }
+
+      .hero {
+        min-height: 500px;
+        padding: 80px 7%;
+      }
+
+      section {
+        padding: 55px 7%;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    菁鋒科技
+    <small>JINGFENG TECHNOLOGY CO., LTD.</small>
+  </div>
+
+  <nav>
+    <a href="#about">公司介紹</a>
+    <a href="#services">服務項目</a>
+    <a href="#product">產品服務</a>
+    <a href="#contact">聯絡我們</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="hero-content">
+    <div class="tag">TECHNOLOGY × DATA × INNOVATION</div>
+
+    <h1>菁鋒科技有限公司</h1>
+
+    <h2>JINGFENG TECHNOLOGY CO., LTD.</h2>
+
+    <p>
+      專注於軟體開發、行動應用、人工智慧應用與數據分析，
+      透過科技與資料整合，打造更有效率、更具價值的數位解決方案。
+    </p>
+
+    <a class="button" href="#services">了解我們的服務</a>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>關於菁鋒科技</h2>
+
+  <p class="subtitle">
+    以軟體技術、資料分析與創新應用，協助使用者將資訊轉化為實際價值。
+  </p>
+
+  <p>
+    菁鋒科技有限公司致力於軟體系統、行動應用程式、
+    AI 技術應用與資料分析服務，從需求規劃、系統設計到產品開發，
+    建立兼具實用性、擴充性與使用體驗的數位產品。
+  </p>
+</section>
+
+<section id="services">
+  <h2>核心服務</h2>
+  <p class="subtitle">JINGFENG TECHNOLOGY SERVICES</p>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>軟體開發</h3>
+      <p>
+        依據實際需求規劃與開發軟體系統，
+        建立具備良好操作體驗及擴充能力的數位工具。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>APP 行動應用</h3>
+      <p>
+        規劃行動裝置應用服務，
+        整合資料查詢、分析及各類數位功能。
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>AI × 數據分析</h3>
+      <p>
+        運用資料處理、統計分析與人工智慧技術，
+        協助整理大量資訊並發掘資料中的趨勢與價值。
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="product" class="product">
+  <h2>產品與創新應用</h2>
+  <p class="subtitle">PRODUCTS & INNOVATION</p>
+
+  <div class="product-box">
+    <h3>彩數通</h3>
+
+    <p>
+      彩券歷史資料查詢與統計分析平台。
+      透過歷史資料整理、條件查詢及統計分析功能，
+      協助使用者更有效率地理解與查閱相關數據。
+    </p>
+
+    <p style="margin-top:15px;font-size:13px;color:#9fb5c6;">
+      ※ 統計分析僅依據歷史資料提供資訊整理與分析，
+      不代表或保證任何未來開獎結果。
+    </p>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>聯絡我們</h2>
+
+  <p class="subtitle">
+    菁鋒科技有限公司｜JINGFENG TECHNOLOGY CO., LTD.
+  </p>
+
+  <p>
+    商務合作、軟體開發及產品服務相關需求，歡迎與我們聯繫。
+  </p>
+</section>
+
+</main>
+
+<footer>
+  © 2026 菁鋒科技有限公司 JINGFENG TECHNOLOGY CO., LTD.<br>
+  All Rights Reserved.
+</footer>
+
+</body>
+</html>
