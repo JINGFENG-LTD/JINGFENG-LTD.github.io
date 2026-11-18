@@ -1,335 +1,72 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="菁鋒科技有限公司｜軟體開發、AI應用與數據分析">
-  <title>菁鋒科技有限公司｜JINGFENG TECHNOLOGY</title>
-
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, "Noto Sans TC", sans-serif;
-      color: #172033;
-      background: #ffffff;
-      line-height: 1.7;
-    }
-
-    header {
-      background: #07152d;
-      color: white;
-      padding: 18px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .brand {
-      font-size: 21px;
-      font-weight: 700;
-    }
-
-    .brand small {
-      display: block;
-      font-size: 11px;
-      font-weight: normal;
-      letter-spacing: 1px;
-      opacity: .75;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 18px;
-      font-size: 14px;
-    }
-
-    .hero {
-      min-height: 560px;
-      padding: 110px 8%;
-      color: white;
-      background:
-        linear-gradient(120deg, rgba(5,18,43,.97), rgba(11,68,105,.90)),
-        radial-gradient(circle at 80% 20%, #2384a8, transparent 40%);
-      display: flex;
-      align-items: center;
-    }
-
-    .hero-content {
-      max-width: 800px;
-    }
-
-    .hero .tag {
-      color: #63d8ff;
-      font-weight: bold;
-      letter-spacing: 2px;
-      margin-bottom: 15px;
-    }
-
-    .hero h1 {
-      font-size: clamp(38px, 7vw, 70px);
-      line-height: 1.15;
-      margin-bottom: 16px;
-    }
-
-    .hero h2 {
-      font-size: clamp(17px, 3vw, 25px);
-      font-weight: 400;
-      color: #cde8f4;
-      margin-bottom: 28px;
-    }
-
-    .hero p {
-      max-width: 680px;
-      font-size: 17px;
-      color: #d7e4ef;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background: #1aa6c9;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 75px 8%;
-    }
-
-    section h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-      color: #0b2545;
-    }
-
-    .subtitle {
-      color: #657287;
-      margin-bottom: 35px;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .card {
-      padding: 30px;
-      border: 1px solid #e1e7ef;
-      border-radius: 12px;
-      background: white;
-      box-shadow: 0 8px 28px rgba(0,0,0,.05);
-    }
-
-    .card h3 {
-      color: #0b5d7a;
-      margin-bottom: 12px;
-    }
-
-    .about {
-      background: #f4f7fa;
-    }
-
-    .product {
-      background: #07152d;
-      color: white;
-    }
-
-    .product h2 {
-      color: white;
-    }
-
-    .product .subtitle {
-      color: #b7c9d8;
-    }
-
-    .product-box {
-      max-width: 850px;
-      padding: 35px;
-      border: 1px solid #1b506d;
-      border-radius: 12px;
-      background: #0b213d;
-    }
-
-    .product-box h3 {
-      color: #63d8ff;
-      font-size: 25px;
-      margin-bottom: 12px;
-    }
-
-    footer {
-      padding: 35px 8%;
-      background: #040d1c;
-      color: #9daebe;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    @media (max-width: 760px) {
-      header {
-        display: block;
-      }
-
-      nav {
-        margin-top: 14px;
-      }
-
-      nav a {
-        display: inline-block;
-        margin: 5px 12px 5px 0;
-      }
-
-      .hero {
-        min-height: 500px;
-        padding: 80px 7%;
-      }
-
-      section {
-        padding: 55px 7%;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="菁鋒科技有限公司｜專業通路商整合及系統應用設計">
+<title>菁鋒科技有限公司｜JINGFENG TECHNOLOGY CO., LTD.</title>
+<style>
+:root{--ink:#29231f;--brown:#9b4616;--orange:#ef8b13;--red:#d91e18;--green:#4d951d;--cream:#fffaf4;--line:#eee3d7;--muted:#6f6964}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:Arial,"Noto Sans TC",sans-serif;color:var(--ink);background:#fff;line-height:1.75}
+header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);padding:14px 7%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--brown)}.brand-mark{font-size:32px;font-weight:900;font-style:italic;color:var(--red);letter-spacing:-4px}.brand-text strong{display:block;font-size:20px;letter-spacing:1px}.brand-text small{display:block;font-size:10px;letter-spacing:1.6px;color:#8c5b3d}
+nav{display:flex;gap:24px;flex-wrap:wrap}nav a{color:#493c34;text-decoration:none;font-size:14px;font-weight:700}nav a:hover{color:var(--orange)}
+.hero{min-height:650px;padding:95px 8%;display:flex;align-items:center;background:radial-gradient(circle at 82% 22%,rgba(239,139,19,.18),transparent 30%),radial-gradient(circle at 72% 72%,rgba(77,149,29,.09),transparent 25%),linear-gradient(135deg,#fff 0%,#fffaf3 62%,#fff3e5 100%);position:relative;overflow:hidden}
+.hero:after{content:"JF";position:absolute;right:5%;top:10%;font-size:min(34vw,430px);font-weight:900;font-style:italic;letter-spacing:-40px;color:rgba(210,89,16,.055);line-height:1}
+.hero-content{position:relative;z-index:2;max-width:830px}.eyebrow{display:inline-block;color:var(--brown);font-size:13px;font-weight:800;letter-spacing:2.5px;border-left:4px solid var(--orange);padding-left:12px;margin-bottom:22px}
+.hero h1{font-size:clamp(40px,7vw,76px);line-height:1.12;color:#71300f;margin-bottom:18px}.hero h2{font-size:clamp(22px,3.5vw,34px);font-weight:700;color:#322b27;margin-bottom:24px}.hero p{max-width:700px;font-size:18px;color:var(--muted)}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}.btn{display:inline-block;padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:800}.btn-primary{background:linear-gradient(90deg,var(--red),var(--orange));color:#fff}.btn-secondary{border:1px solid #caa47f;color:var(--brown);background:#fff}
+section{padding:82px 8%}.section-head{max-width:760px;margin-bottom:38px}.kicker{color:var(--orange);font-size:12px;font-weight:900;letter-spacing:2px;text-transform:uppercase}.section-head h2{font-size:clamp(30px,4vw,44px);color:#65300f;margin:7px 0 10px}.section-head p{color:var(--muted)}
+.about{background:#fff}.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}.about-copy p{margin-bottom:16px}.principles{display:grid;grid-template-columns:1fr 1fr;gap:14px}.principle{padding:22px;border-radius:16px;background:var(--cream);border:1px solid var(--line)}.principle b{display:block;color:var(--brown);margin-bottom:5px}
+.services{background:#fbf8f4}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:30px;box-shadow:0 10px 32px rgba(86,52,26,.05);position:relative;overflow:hidden}.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--red),var(--orange),var(--green))}.card .num{font-size:12px;color:var(--orange);font-weight:900}.card h3{font-size:22px;color:#71300f;margin:8px 0 12px}.card p{color:var(--muted)}
+.process{background:#54260f;color:#fff}.process .section-head h2,.process .section-head p{color:#fff}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.step{padding:25px;border:1px solid rgba(255,255,255,.18);border-radius:16px;background:rgba(255,255,255,.06)}.step b{display:block;color:#ffc16d;font-size:18px;margin-bottom:8px}.step p{color:#f0ddd1;font-size:14px}
+.contact{background:#fff}.contact-box{border-radius:24px;padding:42px;background:linear-gradient(135deg,#fff7ed,#fff);border:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:30px}.contact-box h2{font-size:32px;color:#71300f}.contact-box p{color:var(--muted)}.email{font-weight:800;color:var(--brown);text-decoration:none}
+footer{padding:34px 8%;background:#24150d;color:#d8c8bc;text-align:center;font-size:13px}
+@media(max-width:800px){header{position:relative;display:block;padding:12px 6%}.brand-text strong{font-size:17px}nav{margin-top:12px;gap:14px}.hero{min-height:560px;padding:75px 7%}.hero:after{right:-5%;top:20%;font-size:70vw;letter-spacing:-25px}.hero p{font-size:16px}section{padding:60px 7%}.about-grid{grid-template-columns:1fr;gap:28px}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.contact-box{display:block}.contact-box .btn{margin-top:22px}.principles{grid-template-columns:1fr}}
+@media(max-width:480px){.steps{grid-template-columns:1fr}nav a{font-size:13px}.brand-mark{font-size:28px}}
+</style>
 </head>
-
 <body>
-
 <header>
-  <div class="brand">
-    菁鋒科技
-    <small>JINGFENG TECHNOLOGY CO., LTD.</small>
-  </div>
-
-  <nav>
-    <a href="#about">公司介紹</a>
-    <a href="#services">服務項目</a>
-    <a href="#product">產品服務</a>
-    <a href="#contact">聯絡我們</a>
-  </nav>
+<a class="brand" href="#top" aria-label="菁鋒科技首頁">
+<span class="brand-mark">JF</span>
+<span class="brand-text"><strong>菁鋒科技有限公司</strong><small>JINGFENG TECHNOLOGY CO., LTD.</small></span>
+</a>
+<nav aria-label="主要導覽"><a href="#about">公司介紹</a><a href="#services">服務項目</a><a href="#process">合作流程</a><a href="#contact">聯絡我們</a></nav>
 </header>
-
-<main>
-
+<main id="top">
 <section class="hero">
-  <div class="hero-content">
-    <div class="tag">TECHNOLOGY × DATA × INNOVATION</div>
-
-    <h1>菁鋒科技有限公司</h1>
-
-    <h2>JINGFENG TECHNOLOGY CO., LTD.</h2>
-
-    <p>
-      專業通路商整合及系統應用設計
-      透過科技與資料整合，打造更有效率、更具價值的數位解決方案。
-    </p>
-
-    <a class="button" href="#services">了解我們的服務</a>
-  </div>
+<div class="hero-content">
+<div class="eyebrow">JINGFENG TECHNOLOGY CO., LTD.</div>
+<h1>整合通路資源<br>打造實用系統</h1>
+<h2>專業通路商整合及系統應用設計</h2>
+<p>從市場需求、通路合作到系統應用，菁鋒科技以務實的整合思維連結商務與科技，協助合作夥伴建立更有效率、更具延展性的營運方案。</p>
+<div class="actions"><a class="btn btn-primary" href="#services">了解服務內容</a><a class="btn btn-secondary" href="#contact">洽詢商務合作</a></div>
+</div>
 </section>
-
 <section id="about" class="about">
-  <h2>關於菁鋒科技</h2>
-
-  <p class="subtitle">
-    以軟體技術、資料分析與創新應用，協助使用者將資訊轉化為實際價值。
-  </p>
-
-  <p>
-    菁鋒科技有限公司致力於軟體系統、行動應用程式、
-    AI 技術應用與資料分析服務，從需求規劃、系統設計到產品開發，
-    建立兼具實用性、擴充性與使用體驗的數位產品。
-  </p>
+<div class="section-head"><span class="kicker">About Jingfeng</span><h2>讓通路經驗與科技應用真正接軌</h2><p>以實際商務需求為起點，整合產品、通路、資訊與系統，建立可落地的合作模式。</p></div>
+<div class="about-grid">
+<div class="about-copy"><p>菁鋒科技有限公司專注於專業通路整合與系統應用設計。我們重視市場端的實際需求，從合作模式、資訊流程、產品推廣到數位工具規劃，協助企業降低溝通與作業成本。</p><p>我們不以單一技術或單一產品限制解決方案，而是依照合作夥伴的營運情境，規劃適合的整合方式，讓商務推進與系統應用相互支援。</p></div>
+<div class="principles"><div class="principle"><b>通路整合</b><span>連結市場、產品與合作資源。</span></div><div class="principle"><b>需求導向</b><span>從實際作業與使用情境出發。</span></div><div class="principle"><b>系統應用</b><span>規劃有效率且可持續的數位流程。</span></div><div class="principle"><b>長期合作</b><span>重視可執行、可延伸的合作價值。</span></div></div>
+</div>
 </section>
-
-<section id="services">
-  <h2>核心服務</h2>
-  <p class="subtitle">JINGFENG TECHNOLOGY SERVICES</p>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>軟體開發</h3>
-      <p>
-        依據實際需求規劃與開發軟體系統，
-        建立具備良好操作體驗及擴充能力的數位工具。
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>APP 行動應用</h3>
-      <p>
-        規劃行動裝置應用服務，
-        整合資料查詢、分析及各類數位功能。
-      </p>
-    </div>
-
-    <div class="card">
-      <h3>AI × 數據分析</h3>
-      <p>
-        運用資料處理、統計分析與人工智慧技術，
-        協助整理大量資訊並發掘資料中的趨勢與價值。
-      </p>
-    </div>
-
-  </div>
+<section id="services" class="services">
+<div class="section-head"><span class="kicker">Our Services</span><h2>核心服務</h2><p>從通路到系統，依不同產業與商務需求提供整合規劃。</p></div>
+<div class="cards">
+<article class="card"><span class="num">01</span><h3>專業通路整合</h3><p>協助梳理產品、市場與合作通路需求，規劃商務合作模式、推廣流程與資源串接，提升市場執行效率。</p></article>
+<article class="card"><span class="num">02</span><h3>系統應用設計</h3><p>依企業實際流程規劃數位工具與系統應用，讓資訊整理、查詢、管理及日常作業更清楚有效率。</p></article>
+<article class="card"><span class="num">03</span><h3>數位方案整合</h3><p>整合網站、行動應用、資料處理及數位服務需求，依專案目標建立具擴充性與實用性的應用方案。</p></article>
+</div>
 </section>
-
-<section id="product" class="product">
-  <h2>產品與創新應用</h2>
-  <p class="subtitle">PRODUCTS & INNOVATION</p>
-
-  <div class="product-box">
-    <h3>彩數通</h3>
-
-    <p>
-      彩券歷史資料查詢與統計分析平台。
-      透過歷史資料整理、條件查詢及統計分析功能，
-      協助使用者更有效率地理解與查閱相關數據。
-    </p>
-
-    <p style="margin-top:15px;font-size:13px;color:#9fb5c6;">
-      ※ 統計分析僅依據歷史資料提供資訊整理與分析，
-      不代表或保證任何未來開獎結果。
-    </p>
-  </div>
+<section id="process" class="process">
+<div class="section-head"><span class="kicker">Cooperation Process</span><h2>合作流程</h2><p>以清楚的需求確認與執行節點，讓每一項合作更容易落地。</p></div>
+<div class="steps"><div class="step"><b>01｜需求了解</b><p>確認市場、產品、通路或系統的實際需求與目標。</p></div><div class="step"><b>02｜整合規劃</b><p>盤點資源與流程，提出適合的合作與應用架構。</p></div><div class="step"><b>03｜執行建置</b><p>依確認內容進行專案執行、系統設計或資源串接。</p></div><div class="step"><b>04｜持續優化</b><p>依使用回饋與營運需求調整，延伸後續合作價值。</p></div></div>
 </section>
-
-<section id="contact">
-  <h2>聯絡我們</h2>
-
-  <p class="subtitle">
-    菁鋒科技有限公司｜JINGFENG TECHNOLOGY CO., LTD.
-  </p>
-
-  <p>
-  商務合作、軟體開發及產品服務相關需求，歡迎與我們聯繫。<br>
-  官方聯絡信箱：<a href="mailto:info@jingfeng-tw.com">info@jingfeng-tw.com</a>
-  </p>
+<section id="contact" class="contact">
+<div class="contact-box"><div><span class="kicker">Contact Us</span><h2>商務合作，歡迎與菁鋒科技聯繫</h2><p>通路合作、系統應用設計與數位方案相關需求，歡迎來信洽詢。</p><a class="email" href="mailto:info@jingfeng-tw.com">info@jingfeng-tw.com</a></div><a class="btn btn-primary" href="mailto:info@jingfeng-tw.com">聯絡我們</a></div>
 </section>
-
 </main>
-
-<footer>
-  © 2026 菁鋒科技有限公司 JINGFENG TECHNOLOGY CO., LTD.<br>
-  All Rights Reserved.
-</footer>
-
+<footer>© 2026 菁鋒科技有限公司 JINGFENG TECHNOLOGY CO., LTD. All Rights Reserved.</footer>
 </body>
 </html>
